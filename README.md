@@ -1,6 +1,9 @@
 # Global Dollar Protocol & Financial Function Translation  
 # 全球美元协议与金融功能转译
 
+`README.md` 锁定课题：研究什么、不研究什么。  
+进入项目后如何工作、做到哪一步算完成、下一次怎么接着做，见 `Loop.md`。
+
 ## 1. 项目概述
 
 本项目研究全球美元体系中的一个基础问题：
@@ -1152,6 +1155,7 @@ Premises → Structure → Risk → Translation → Market
 global-dollar-protocol/
 │
 ├── README.md
+├── Loop.md
 │
 ├── article/
 │   ├── 00_introduction.md
