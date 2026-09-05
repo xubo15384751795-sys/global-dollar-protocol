@@ -173,6 +173,20 @@ Market implication / Watch / Falsifier / Last updated
 
 Q 对不上就不要硬塞。写进 `article/` 的内容必须已经过 Loop，不是 raw candidate。
 
+处理旧文或强判断时，不要先改成“可能/或许”。先保留原意，再判定类型：
+
+```text
+factual?  → verify → preserve
+interpretation? → add mechanism / evidence
+testable hypothesis? → conditions + observable + falsifier
+scenario / counterfactual? → label explicitly
+normative / rhetorical?
+    ├─ useful core → extract
+    └─ none → archive / delete
+```
+
+该强的事实仍用强表述。没有证据的绝对句不要靠润色拯救。
+
 ---
 
 ## Automation Note
