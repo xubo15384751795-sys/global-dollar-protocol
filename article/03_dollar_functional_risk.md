@@ -6,90 +6,81 @@
 
 不要：
 
-$$
-\text{Dollar Risk} = \text{Dollar Collapse}
-$$
-
-也不要：
-
-$$
-\text{Dollar Risk} = \text{Dollar Shortage}
-$$
+```text
+Dollar Risk = Dollar Collapse
+Dollar Risk = Dollar Shortage
+```
 
 而是：
 
-> **Dollar Functional Risk：美元或美元相关资产在特定状态下无法继续完成原本承担的某项金融功能。**
+> Dollar Functional Risk：美元或美元相关资产在特定状态下，无法继续完成它原本承担的某项金融功能。
+
+V0 原稿里最值得救的一句是：
+
+> 美元信用不会崩塌，但美元无法释放信用才是更危险的场景。
+
+这句话不能靠加“可能”保存。它的分析核是：信用质量与功能可达性可以分开。本文把它收成正式定义。原稿后半把它接去“节奏饥渴”“补液器”“接管美元”，那些不进本章。
 
 ---
 
-## 拆开
+## 1. 拆开功能
 
 ```text
-Fiscal risk
-
-Monetary / liquidity risk
-
-Funding risk
-
-Collateral risk
-
-Settlement risk
-
-Jurisdiction / access risk
-
-Balance-sheet / intermediation risk
-
+Fiscal / safe-asset
+Monetary / liquidity
+Funding access
+Collateral eligibility
+Settlement access
+Jurisdiction / access
+Balance-sheet / intermediation
 Layer mismatch
 ```
 
-每一项对应一种“原本能做、现在做不了或成本变得不可接受”的功能损失。身份可以还在。DXY 可以不崩。
+身份可以还在。DXY 可以不崩。受损的是：期限匹配的融资、可接受抵押、清算时点、账户与合规准入，或中介资产负债表接不住。
 
-- Fiscal risk：UST 作为主权负债 / 安全资产的身份或供给条件变化
-- Monetary / liquidity risk：Fed 提供基础流动性的条件变化
-- Funding risk：期限匹配的美元融资变得昂贵或不可得
-- Collateral risk：可接受抵押品减少、haircut 上升、资格收窄
-- Settlement risk：清算、交割、时点失败
-- Jurisdiction / access risk：合规、制裁、账户准入、清算行退出
-- Balance-sheet / intermediation risk：dealer / 银行没有能力继续做市或转译
-- Layer mismatch：上述各层方向不一致
+美元荒是 funding access 全面受损、且替代转译也接不上时的极端情形。它是输出，不是全文根因。
 
 ---
 
-## 真正值得重点写的是层间错配
+## 2. 层间错配
 
-$$
-R_{\text{interaction}}
-$$
+最值得追的是互动风险：单层看起来稳定，连接出问题。
 
-例 1：
+例：Treasury supply 上升，dealer capacity 跟不上，repo 和融资条件变紧。财政身份还在，协议功能受损。
 
-```text
-Treasury supply ↑
-        ↓
-dealer capacity 不足
-        ↓
-repo / liquidity pressure
-```
+例：Fed 政策对美国合适，全球美元借款人承压。这是美元作为全球协议货币的特有风险，不是普通主权货币的国内过热或过冷。
 
-财政层在供给，协议层吸收不了，货币层未必同步放松。结果是 UST 身份还在，美元融资功能受损。
-
-例 2：
-
-```text
-Fed policy appropriate for US
-        ↓
-global dollar borrowers experience stress
-```
-
-货币层对美国合适，协议层对全球借款人不合适。这是美元作为全球协议货币的特有风险，不是普通主权货币的国内过热/过冷。
+例：抵押品仍合格，但结算或管辖准入受阻。资金和证券都在，功能走不通。
 
 ---
 
-## 美元荒放在哪里
+## 3. 1998 港元压力是案例，不是定律
 
-美元荒是极端 funding stress scenario。它属于 Functional Risk 的一种实现，不是全文根因。
+制度事实：联系汇率把 HKD 钉在美元。开放的小经济体、固定汇率、有限储备，面对投机压力时，货币局必须用利率、流动性和储备兑换来守锚。
 
-主叙事优先写：哪一项功能、在哪一层、因何种错配而受损。只有当 funding access 全面收紧、替代协议也接不上时，才升格为美元荒。
+1998 年香港经历了股市与汇市同时承压，金管局提高短期利率并入市。联系汇率没有脱钩。这些是有官方记录的机制，不是“猎杀叙事”。
+
+原稿把这一段写成：没有中国出手香港必然溃败；有中国出手人民币信用就此出海。两跳都过长。
+
+条件判断可以保留：
+
+```text
+若固定汇率 + 有限最终流动性 + 无可信后盾
+→ 投机压力可以迫使锚失效。
+1998 不是因为“市场永远赢”，也不是因为“主权永远赢”。
+```
+
+中国因素在当年如何进入金管局操作、国有银行盘口和政治信号，必须回 HKMA / 官方史料，不能用“影子央行”当作已证机制。1998 守住联系汇率，也不等于启动了人民币国际化。那是另一条更长的因果链。
+
+索罗斯式“五步法”里，可保留的分析核是：空头可以同时压货币和资产、诱使当局消耗储备、用高利率制造资产压力。戏剧化的“系统猎杀”“收割”删除。
+
+---
+
+## 4. 支付份额不是功能充分统计量
+
+原稿引用近年美元在 SWIFT 支付中的高占比，以及人民币占比较低。具体数字必须回原口径：是否含欧元区内支付、是否与贸易计价或外汇成交混淆。
+
+即使美元支付份额仍高，也不证明融资、抵押和清算可达性没有局部分化。支付份额上升，甚至可能与其他通道不成熟有关，而不是信用增强。这一解释是假说，要用 basis、offshore credit、设施使用来对。
 
 ---
 
@@ -97,20 +88,22 @@ global dollar borrowers experience stress
 
 ```text
 Current conclusion:
-美元风险应定义为功能受损，而不是崩溃或短缺。当前最值得追的是层间错配，而不是单一冲击。
+美元风险应定义为功能受损。优先对象是层间错配。信用稳定与功能可达性下降可以并存。
 
 Evidence:
-2019 年 repo、疫情初期 UST 抛售、全球 FX basis 压力，都更接近功能/接口失灵，而不是美元身份消失。
+定义与三层结构一致。repo 压力、FX basis、制裁下的结算摩擦，都更接近功能/接口问题，而不是美元身份消失。1998 联系汇率承压且未脱钩，是货币局+美元锚的案例。
 
 Counterevidence:
-若历史上所有美元压力都可以被单一“美元短缺”指标充分概括，则分类过细。
+若所有美元压力都能被单一短缺或崩溃指标概括，分类过细。
 
 Market implication:
 先判断受损的是 funding、collateral、settlement 还是 access，再决定看 repo、basis、UST depth 还是离岸利差。
 
 Watch:
-dealer capacity vs Treasury supply；FX basis；SRF / FIMA / swap line 使用；haircut 与抵押品资格变化。
+dealer vs supply；FX basis；SRF / FIMA / swap line；haircut 与资格变化。
 
 Falsifier:
-出现所谓“美元风险”时，上述功能指标均无压力，只有叙事或 DXY 波动。
+出现“美元风险”时，功能指标均无压力，只有叙事或 DXY。
+
+Last updated: 2026-09-05
 ```

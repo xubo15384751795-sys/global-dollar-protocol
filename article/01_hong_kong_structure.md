@@ -4,94 +4,96 @@
 
 香港究竟是一种怎样的金融结构？
 
-不是评价香港重要不重要，也不先问它是不是中介层。先把层拆开。
+不评价它重要不重要，也不先问它是不是中介层。先把层拆开。
 
 ---
 
-## 结构
+## 1. 可确认的制度事实
+
+香港是中华人民共和国的特别行政区。合约和金融纠纷大量使用普通法。它有独立关税区地位，以及相对独立的货币、支付和监管安排。
+
+港元实行联系汇率。货币基础的扩张和收缩，制度上与美元储备和兑换保证相连。因此：
 
 ```text
-Hong Kong
-│
-├── Sovereign / legal layer
-│
-├── HKD
-│   └── USD anchor
-│
-├── CNH
-│   └── RMB sovereign origin
-│
-├── USD market
-│
-├── equity / bond market
-│
-├── Connect infrastructure
-│
-└── clearing / collateral / funding
+HKD identity: 香港法定货币
+HKD anchor: USD
+HKD liquidity: 货币局、Aggregate Balance、贴现窗、银行体系
 ```
 
-核心问题有两个：
+这三件事不必重合。港币不是“强主权信用货币”，也不因此没有金融功能。它是制度壳：身份在香港，锚在美元。
 
-> HKD 的主权层、信用锚、流动性和市场形成为什么可以部分分离？
+CNH 是另一种组合：身份是人民币，场所主要在香港离岸市场，与在岸 CNY 的利率、清算和可兑换性分开。CNH ≠ CNY，CNH ≠ HKD。
 
-> CNH 为什么又构成另一种不同的组合？
+香港还同时存在美元存贷、清算、国际银行业务，以及 Stock Connect、Bond Connect 等与中国在岸市场的准入安排。
 
----
-
-## HKD：身份与锚可以分开
-
-HKD 的法律身份在香港。信用锚在美元。流动性由货币局、Aggregate Balance、贴现窗和银行体系共同形成。市场定价则落在 USD/HKD、HIBOR 和本地信贷/资产价格上。
-
-这是 P2 的第一处实例：issuer、denomination、anchor、liquidity currency 不必重合。
-
-待写入：货币局规则、Convertibility Undertaking、HKMA 资产负债表、港元市场如何在美元锚下产生自己的利率。
+以上是结构描述。它们说明香港可以把主权归属、货币锚、离岸人民币和美元资金放在同一空间里。它们还不证明香港“全球唯一”，也不证明这些功能只能在这里完成。
 
 ---
 
-## CNH：另一种组合
+## 2. 相对经济体量下降是观察，不是接口判决
 
-CNH 的主权信用来自中国，交易和清算主要在香港，与在岸 CNY 分隔。它不是 HKD 的镜像，也不是“离岸美元的人民币版”。它是另一组 identity / function 搭配：
+公开比较常见的数量级是：1997 年香港 GDP 大约相当于内地的五分之一量级；近年则落到百分之二左右。精确百分比随汇率和统计口径变化，必须用官方序列核。本文只使用这一观察：
 
-- 身份：人民币
-- 场所：香港离岸市场
-- 功能：离岸融资、套保、贸易结算、与 Connect / 中资资产定价相连
+> 香港相对于中国整体经济的 GDP 权重显著下降。
 
-待写入：CNH 市场结构、CNH HIBOR、CNH–CNY 分隔为何能持续。
+原稿由此写成：“香港已从价值资产转化为需额外负担的信用负资产。” 这一句同时包含价值定义、成本收益、信用判断和因果，中间没有机制。本文不采用。
 
----
-
-## 香港制度接口
-
-原稿已提出：香港连接国际美元清算、中国资本账户和国际金融监管/法律框架。这个直觉保留。
-
-但把下列判断全部降级为待验证命题：
-
-- 香港是全球唯一接口
-- 香港必然是中介层
-- 摩擦越高，香港价值越高
-
-最后一条尤其不能当公理。它的证伪条件在第 6 章。
-
----
-
-## 本章必须落到市场
+拆成竞争假说：
 
 ```text
-HKD
-HIBOR
-Aggregate Balance
+Observation:
+香港相对 GDP 权重下降。
 
-CNH
-CNH HIBOR
-CNH-CNY spread
-USD/CNH
+Question:
+经济体量下降是否意味着跨境金融接口价值同步下降？
 
-Connect flows
-HK equity
-China offshore credit
+H1: 体量下降 ⇒ 边际金融功能同步弱化。
+H2: 接口价值主要来自制度、流动性、清算和市场准入，因此与 GDP 权重并不同比。
+
+Test:
+跨境融资、CNH 流动性、Connect 使用、清算量、市场深度。
 ```
 
-没有这些观察量，结构描述就停在制度图。
+若 H2 成立，GDP 份额下降不能单独否定香港的接口功能。若 H1 成立，接口指标应与份额同比变差。这是经验问题。
+
+---
+
+## 3. 接口命题：有协议，不等于必然被用
+
+原稿的强命题是：全球可以绕开中国，但不能绕开香港；香港是唯一能同时被中国主权体系和美元体系接入的接口。
+
+制度事实支持较弱的命题：香港确实同时接到普通法合约、美元资金链和中国市场准入。比较组不支持把它写成公理。新加坡处理大量美元和财富管理，但不嵌入中国资本账户。上海在岸，监管和可兑换性不同。伦敦是全球美元和合约中心，对中国在岸准入不是同一套。澳门体量小。
+
+因此：
+
+```text
+H_interface:
+在中国资本账户未完全开放、且国际合约仍依赖普通法/离岸美元安排时，
+香港对若干跨境功能仍具有成本或准入上的优势。
+```
+
+这不是“资本无法拒绝”。若该结构能降低准入摩擦并保留退出流动性，相对直接进入在岸的成本优势可以提高。是否提高，看流量、融资成本和市场深度。
+
+香港是不是中介层，留到第 4 章用成本条件检验。本章只把结构画清楚。
+
+---
+
+## 4. 必须落到市场
+
+没有这些观察量，结构描述停在制度图：
+
+```text
+HKD / USD/HKD / Convertibility Undertaking
+HIBOR / Aggregate Balance / HKMA operations
+
+CNH / USD/CNH / CNH HIBOR / CNH–CNY spread
+CNH deposits / offshore issuance
+
+Connect northbound / southbound
+HK equity / China offshore credit
+```
+
+Dollar → HK 链的第一观察是 HKD 流动性和 HIBOR，不是港股故事。China → HK 链的第一观察是 CNH–CNY 和 Connect 流量。
 
 ---
 
@@ -99,20 +101,22 @@ China offshore credit
 
 ```text
 Current conclusion:
-香港是多层身份并存的金融结构：HKD 锚美元，CNH 源自中国主权信用，USD funding 与中国市场接口同场。是否构成中介层，尚未判定。
+香港是多层身份并存的结构：HKD 锚美元，CNH 源自中国主权信用，USD funding 与中国市场接口同场。相对 GDP 下降是观察。接口价值是否同步下降，未决。香港是否中介层，未决。
 
 Evidence:
-货币局、CNH 清算、Connect 和美元银行业务在制度上同时存在。
+货币局、普通法安排、CNH、Connect、美元银行业务在制度上同时存在。GDP 相对份额下降与公开数量级一致，精确数字待核官方序列。
 
 Counterevidence:
-若 HKD 市场已与美元锚脱钩运行，或 CNH 的主场已不在香港，则本章结构图失效。
+若 HKD 已与美元锚脱钩运行，或 CNH / Connect 主场已不在香港，本章结构图失效。若接口指标随 GDP 份额同比塌缩，H2 被削弱。
 
 Market implication:
-先盯 HIBOR、Aggregate Balance、CNH-CNY spread、USD/CNH 和 Connect flows，不先对港股/人民币做方向判断。
+先盯 HIBOR、Aggregate Balance、CNH-CNY、USD/CNH、Connect flows。
 
 Watch:
 USD/HKD 是否仍在 CU 区间；CNH 流动性是否仍集中在香港；Connect 是否仍是主要准入通道。
 
 Falsifier:
-摩擦上升的同时，HK flows、CNH liquidity、Connect usage 下降，且资金改走其他通道。
+friction ↑ 同时 HK flows、CNH liquidity、Connect usage ↓，资金改走其他通道。
+
+Last updated: 2026-09-05
 ```
