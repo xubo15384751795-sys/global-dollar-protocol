@@ -1169,11 +1169,6 @@ global-dollar-protocol/
 │   ├── project_contract.yaml
 │   └── automation_rules.yaml
 │
-├── candidates/
-│
-├── logs/
-│   └── automation/
-│
 ├── article/
 │   ├── 00_introduction.md
 │   ├── 01_hong_kong_structure.md
@@ -1185,19 +1180,17 @@ global-dollar-protocol/
 │   └── 07_conclusion.md
 │
 ├── foundations/
-│   ├── definitions.md
 │   ├── premises.md
+│   ├── definitions.md
 │   ├── assumptions.md
 │   └── market_transmission_map.md
 │
 ├── analysis/
-│   ├── dollar/
-│   ├── treasury/
-│   ├── hong_kong/
-│   ├── hkd/
-│   ├── cnh/
-│   ├── china_market/
-│   └── cross_market/
+│   ├── q1_hong_kong/
+│   ├── q2_global_dollar/
+│   ├── q3_functional_risk/
+│   ├── q4_translation/
+│   └── q5_market/
 │
 ├── models/
 │   ├── dollar_layers.md
@@ -1210,13 +1203,18 @@ global-dollar-protocol/
 │   ├── raw/
 │   ├── processed/
 │   ├── indicators/
-│   └── charts/
+│   └── figures/
 │
 ├── sources/
 │   ├── official/
 │   ├── academic/
 │   ├── market_research/
 │   └── source_notes.md
+│
+├── candidates/
+│
+├── logs/
+│   └── automation/
 │
 ├── archive/
 │   └── original/
