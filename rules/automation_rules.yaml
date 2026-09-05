@@ -1,0 +1,169 @@
+# 机器怎样并行、何时停止、争议怎么打分。研究步骤仍以 Loop.md 为准。
+
+recursion_depth: 2
+
+max_candidates_per_run: 5
+review_shortlist: 3
+
+max_dispute_rounds: 3
+
+support_score:
+  # 0–10 total. This is Support Score, not Truth Score.
+  # Hide agent identity. Score Position A / Position B with the same rubric.
+  # No incumbent bonus. No contrarian bonus.
+  evidence: [0, 2]
+  definition: [0, 2]
+  mechanism: [0, 2]
+  falsifiability: [0, 2]
+  market_observability: [0, 2]
+
+continuation_value:
+  # Scored independently of who is "winning".
+  information_gain: [0, 2]
+  decision_impact: [0, 2]
+  resolvability: [0, 2]
+  max: 6
+
+continue_if:
+  continuation_value_min: 4
+
+automated_output:
+  status: candidate
+  authority: provisional
+  canonical_write: false
+
+agents:
+  default:
+    - id: A
+      role: Structure / Official Sources
+    - id: B
+      role: Market / Data
+    - id: C
+      role: Mechanism / Transmission
+    - id: D
+      role: Challenge / Alternative Explanation
+  optional:
+    - id: V
+      role: Research Value Agent
+      scores: continuation_value
+      does_not_judge_who_is_right: true
+
+workflow:
+  sequence:
+    - independent_first_pass
+    - compare
+    - challenge
+    - discriminating_test
+    - score
+    - continuation_decision
+  forbid_opening_debate: true
+
+dispute_round:
+  # round += 1 only after all ten steps.
+  steps:
+    - exact_disagreement
+    - position_a_best_case
+    - position_b_best_case
+    - evidence_comparison
+    - both_sides_state_what_would_change_their_view
+    - identify_discriminating_test
+    - execute_test_if_available
+    - neutral_scoring
+    - continuation_value_scoring
+    - updated_positions
+  same_substantive_issue_keeps_counter: true
+  after_max_rounds: HUMAN_REVIEW_REQUIRED
+  forbid:
+    - spawn_new_agent_to_restart
+    - change_prompt_to_restart
+    - change_model_to_reset_rounds
+    - rename_dispute_to_restart
+
+early_stop:
+  - convergence
+  - concession
+  - no_new_information
+  - unresolvable_now
+  - out_of_scope
+  - continuation_value_leq_3
+
+stop_lines:
+  - id: scope
+    action: STOP then Scope Change Proposal
+  - id: recursion
+    max_depth: 2
+    action: record dependency and stop splitting
+  - id: no_new_information
+    action: STOP
+  - id: dispute
+    action: STOP after 3 complete rounds
+  - id: candidate_saturation
+    max_keep: 5
+    review: 3
+  - id: model_expansion
+    require: existing_model_fails_where
+  - id: missing_evidence
+    action: UNRESOLVED_DEPENDENCY
+  - id: automation_authority
+    action: stop at CANDIDATE
+
+progress_is:
+  - new reliable evidence
+  - new counterevidence
+  - mechanism clarified
+  - uncertainty reduced
+  - competing explanation eliminated
+  - discriminating observable identified
+  - market transmission link validated
+  - claim weakened or falsified
+  - a decision became possible
+
+progress_is_not:
+  - more questions
+  - more candidates
+  - more hypotheses
+  - more agent output
+
+candidate_file:
+  dir: candidates/
+  front_matter:
+    status: [raw, screened, reviewed, promoted, rejected]
+    origin: [automated, human, interactive_ai]
+    question: string
+    created_at: string
+    scope_version: string
+  body:
+    - Candidate Claim
+    - Why it matters
+    - Evidence
+    - Counterevidence
+    - Mechanism
+    - Market implication
+    - Falsifier
+    - Open challenge
+
+logs:
+  dir: logs/automation/
+  filename: YYYY-MM-DD_task-name.md
+  write_only_when:
+    - scope proposal
+    - unresolved dependency
+    - three-round dispute
+    - hard stop
+    - candidate promotion or rejection
+    - automation exception
+    - material model conflict
+  fields:
+    - Task
+    - Question
+    - Scope version
+    - Agents used
+    - Candidates produced
+    - Material challenges
+    - Disputes
+    - Rounds completed
+    - Support scores
+    - Continuation values
+    - Stop reason
+    - Unresolved
+    - Human review required

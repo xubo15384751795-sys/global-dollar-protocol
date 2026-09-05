@@ -1,0 +1,107 @@
+scope_version: "3.0"
+
+project:
+  name: Global Dollar Protocol & Financial Function Translation
+  primary_output: one macro-finance article
+
+# Loop 写怎么研究。本文件只写范围、红线和权限。
+
+questions:
+  - id: Q1
+    name: Hong Kong Structure
+  - id: Q2
+    name: Global Dollar Structure
+  - id: Q3
+    name: Dollar Functional Risk
+  - id: Q4
+    name: Financial Function Translation
+  - id: Q5
+    name: Market Pricing and Rerouting
+
+in_scope:
+  - USD
+  - US Treasury
+  - Federal Reserve
+  - US fiscal system
+  - Global Dollar Protocol
+  - Hong Kong
+  - HKD
+  - CNH
+  - CNY
+  - China market access
+  - repo
+  - collateral
+  - funding
+  - clearing
+  - settlement
+  - cross-border liquidity
+
+not_in_scope:
+  - whether RMB replaces USD
+  - long-run de-dollarization forecasts
+  - multi-anchor world-order design
+  - global monetary-system reform
+  - general Chinese or US politics
+  - general geopolitics or trade war
+  - crypto
+  - CBDC
+  - stablecoin
+  - AI-as-subject
+  - global governance
+
+functions:
+  - pricing
+  - payment
+  - settlement
+  - funding
+  - borrowing
+  - collateral
+  - hedging
+  - liquidity
+  - convertibility
+  - capital access
+  - reserve
+  - exit
+
+redlines:
+  - Hong Kong as intermediary is an empirical question, not a premise.
+  - Translation is not ordinary FX conversion.
+  - Dollar risk is functional risk, not collapse and not shortage.
+  - Do not treat "globally unique" claims as established fact.
+  - Extreme system-collapse narratives are tails, not the baseline.
+  - Fact, interpretation, hypothesis, scenario, and counterfactual must not be written in the same voice.
+  - Source authority is not interpretation authority.
+  - Automation may not write canonical article conclusions.
+  - A deferred challenge is unresolved, not proven.
+  - Do not generate more tasks merely to keep work running.
+
+human_authority:
+  can:
+    - scope
+    - promotion
+    - priority
+    - unresolved_dispute
+  evidence_exemption: false
+
+machine_authority:
+  can:
+    - search
+    - analyze
+    - model
+    - challenge
+    - compare
+    - score
+    - generate_candidate
+    - recommend_next_step
+  cannot:
+    - change_redline
+    - self_promote
+    - rewrite_scope
+    - declare_dispute_resolved_without_evidence
+    - spawn_a_restart_of_the_same_dispute
+
+candidate_authority:
+  automated_default_status: raw
+  automated_default_authority: provisional
+  canonical_write: false
+  source_authority_is_not_interpretation_authority: true

@@ -1,8 +1,16 @@
 # Global Dollar Protocol & Financial Function Translation  
 # 全球美元协议与金融功能转译
 
-`README.md` 锁定课题：研究什么、不研究什么。  
-进入项目后如何工作、做到哪一步算完成、下一次怎么接着做，见 `Loop.md`。
+四层分工：
+
+```text
+README.md     研究是什么、不研究什么
+Loop.md       任何人 / 任意 AI 都能执行的最小研究流程
+rules/        什么不能做，机器怎样并行
+candidates/   机器发现的东西先放这里
+```
+
+进入项目后先读 `README.md` 和 `Loop.md`。不要把所有规则塞回 Loop。
 
 ## 1. 项目概述
 
@@ -1156,6 +1164,15 @@ global-dollar-protocol/
 │
 ├── README.md
 ├── Loop.md
+│
+├── rules/
+│   ├── project_contract.yaml
+│   └── automation_rules.yaml
+│
+├── candidates/
+│
+├── logs/
+│   └── automation/
 │
 ├── article/
 │   ├── 00_introduction.md
