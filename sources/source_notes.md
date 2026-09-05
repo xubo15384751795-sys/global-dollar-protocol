@@ -42,6 +42,12 @@ Standard Chartered / JPM / Citi / Goldman / HSBC / Gavekal / MUFG / ASR 等。
 
 ---
 
+## Market series this round
+
+- `data/indicators/fx_daily.csv`：Yahoo `HKD=X` / `CNY=X` 日收，2014-09-07–2026-09-05。市场报价，不是 HKMA 定盘。
+- HKMA daily API 本轮 502/超时，HIBOR 与 Aggregate Balance 未下载。
+- Yahoo 无可用 CNH / HIBOR 历史；HKEX Connect 历史页无直接 CSV。不编造。
+
 ## Verified this round
 
 - World Bank `NY.GDP.MKTP.CD`：HK/China GDP 份额 1997=18.3%，2021=2.0%。

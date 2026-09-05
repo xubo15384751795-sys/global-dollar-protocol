@@ -95,6 +95,8 @@ Connect northbound / southbound
 HK equity / China offshore credit
 ```
 
+已接到序列的只有 USD/HKD（Yahoo 日收，2014-09 至 2026-09，n=3122）。约 96% 的交易日停在 7.75–7.85 内；贴强方（<7.75）107 日，贴弱方（>7.85）11 日。最近在 7.84 附近，靠弱方。HIBOR、Aggregate Balance、CNH–CNY、Connect 本轮没有拉到官方历史文件，不填假数。细节：`analysis/q5_market/usdhkd_cu_band.md`。
+
 Dollar → HK 链的第一观察是 HKD 流动性和 HIBOR，不是港股故事。China → HK 链的第一观察是 CNH–CNY 和 Connect 流量。
 
 ---
@@ -115,10 +117,10 @@ Market implication:
 先盯 HIBOR、Aggregate Balance、CNH-CNY、USD/CNH、Connect flows。
 
 Watch:
-USD/HKD 是否仍在 CU 区间；CNH 流动性是否仍集中在香港；Connect 是否仍是主要准入通道。
+USD/HKD 贴在 CU 哪一侧；CNH 流动性是否仍集中在香港；Connect 是否仍是主要准入通道。
 
 Falsifier:
 friction ↑ 同时 HK flows、CNH liquidity、Connect usage ↓，资金改走其他通道。
 
-Last updated: 2026-09-05 (World Bank GDP share verified)
+Last updated: 2026-09-05 (USD/HKD daily panel added)
 ```

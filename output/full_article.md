@@ -1,6 +1,6 @@
 # Global Dollar Protocol & Financial Function Translation
 
-V1 正文。由 V0 原稿按类型判定重写。GDP 份额、SWIFT 口径、1998 金管局操作已核。原稿冻结于 `archive/original/original.md`。
+V1 正文。GDP 份额、SWIFT、1998 已核。USD/HKD 日序列已接（Yahoo 市场报价）。HIBOR / CNH–CNY / Connect 官方历史本轮未下载。
 
 写作链：Premises → Structure → Risk → Translation → Market
 
@@ -205,6 +205,8 @@ Connect northbound / southbound
 HK equity / China offshore credit
 ```
 
+已接到序列的只有 USD/HKD（Yahoo 日收，2014-09 至 2026-09，n=3122）。约 96% 的交易日停在 7.75–7.85 内；贴强方（<7.75）107 日，贴弱方（>7.85）11 日。最近在 7.84 附近，靠弱方。HIBOR、Aggregate Balance、CNH–CNY、Connect 本轮没有拉到官方历史文件，不填假数。细节：`analysis/q5_market/usdhkd_cu_band.md`。
+
 Dollar → HK 链的第一观察是 HKD 流动性和 HIBOR，不是港股故事。China → HK 链的第一观察是 CNH–CNY 和 Connect 流量。
 
 ---
@@ -225,12 +227,12 @@ Market implication:
 先盯 HIBOR、Aggregate Balance、CNH-CNY、USD/CNH、Connect flows。
 
 Watch:
-USD/HKD 是否仍在 CU 区间；CNH 流动性是否仍集中在香港；Connect 是否仍是主要准入通道。
+USD/HKD 贴在 CU 哪一侧；CNH 流动性是否仍集中在香港；Connect 是否仍是主要准入通道。
 
 Falsifier:
 friction ↑ 同时 HK flows、CNH liquidity、Connect usage ↓，资金改走其他通道。
 
-Last updated: 2026-09-05 (World Bank GDP share verified)
+Last updated: 2026-09-05 (USD/HKD daily panel added)
 ```
 
 
@@ -578,6 +580,8 @@ property / equities / credit
 
 HKD 锚住美元，不意味着 HKD 流动性自动复制 Fed。货币局把美元条件转成港元市场条件，但 Aggregate Balance 和 HIBOR 有自己的时滞。
 
+USD/HKD 日收（Yahoo，2014–2026）几乎都在 7.75–7.85 内。第一观察因此不是“脱锚与否”，而是贴强方还是弱方。HIBOR 和 Aggregate Balance 仍缺官方序列，这条链后半段还没接上。
+
 ### China → HK
 
 ```text
@@ -638,7 +642,7 @@ core indicators 是否按链的顺序动；压力期流量是否改道。
 Falsifier:
 结构冲击之后，指定的 first observable 长期沉默，只有最终价格故事。
 
-Last updated: 2026-09-05
+Last updated: 2026-09-05 (USD/HKD CU-band panel)
 ```
 
 

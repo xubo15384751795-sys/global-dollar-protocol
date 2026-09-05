@@ -48,6 +48,8 @@ property / equities / credit
 
 HKD 锚住美元，不意味着 HKD 流动性自动复制 Fed。货币局把美元条件转成港元市场条件，但 Aggregate Balance 和 HIBOR 有自己的时滞。
 
+USD/HKD 日收（Yahoo，2014–2026）几乎都在 7.75–7.85 内。第一观察因此不是“脱锚与否”，而是贴强方还是弱方。HIBOR 和 Aggregate Balance 仍缺官方序列，这条链后半段还没接上。
+
 ### China → HK
 
 ```text
@@ -108,5 +110,5 @@ core indicators 是否按链的顺序动；压力期流量是否改道。
 Falsifier:
 结构冲击之后，指定的 first observable 长期沉默，只有最终价格故事。
 
-Last updated: 2026-09-05
+Last updated: 2026-09-05 (USD/HKD CU-band panel)
 ```
