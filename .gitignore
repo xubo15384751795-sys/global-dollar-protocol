@@ -1,0 +1,12 @@
+.DS_Store
+*.pyc
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# keep folders, ignore dumped raw/processed files
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
