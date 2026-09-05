@@ -74,6 +74,7 @@ redlines:
   - Automation may not write canonical article conclusions.
   - A deferred challenge is unresolved, not proven.
   - Do not generate more tasks merely to keep work running.
+  - Do not create new directories to place a file.
 
 human_authority:
   can:
@@ -99,6 +100,26 @@ machine_authority:
     - rewrite_scope
     - declare_dispute_resolved_without_evidence
     - spawn_a_restart_of_the_same_dispute
+    - create_new_directory
+
+file_placement:
+  rule: Do not create a new directory. Use the first matching destination.
+  priority:
+    - if: directly changes the article body
+      dest: article/
+    - if: answers one of Q1–Q5
+      dest: analysis/qX/
+    - if: abstracts a general mechanism
+      dest: models/
+    - if: is a foundational definition
+      dest: foundations/
+    - if: is an unverified new finding
+      dest: candidates/
+    - if: none of the above
+      dest: do_not_create_file
+  notes:
+    - A file that does not map to a Q must not be forced into analysis/.
+    - Raw automated output must not be written into article/.
 
 candidate_authority:
   automated_default_status: raw

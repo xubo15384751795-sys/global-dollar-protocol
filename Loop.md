@@ -158,6 +158,23 @@ Market implication / Watch / Falsifier / Last updated
 
 ---
 
+## File Placement
+
+不知道文件该放哪里时，**不要新建目录**。按这个优先级，只问一次，落到第一处成立的位置：
+
+```text
+它直接改变正文吗？                 → article/
+它是在回答某个 Q？                 → analysis/qX/
+它是在抽象通用机制？               → models/
+它是基础定义？                     → foundations/
+它是尚未经审核的新发现？           → candidates/
+都不是？                           → 先别创建文件。
+```
+
+Q 对不上就不要硬塞。写进 `article/` 的内容必须已经过 Loop，不是 raw candidate。
+
+---
+
 ## Automation Note
 
 If operating interactively:
