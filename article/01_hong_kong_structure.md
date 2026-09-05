@@ -32,7 +32,9 @@ CNH 是另一种组合：身份是人民币，场所主要在香港离岸市场�
 
 ## 2. 相对经济体量下降是观察，不是接口判决
 
-公开比较常见的数量级是：1997 年香港 GDP 大约相当于内地的五分之一量级；近年则落到百分之二左右。精确百分比随汇率和统计口径变化，必须用官方序列核。本文只使用这一观察：
+World Bank 现价美元 GDP（`NY.GDP.MKTP.CD`）：1997 年香港约为中国内地的 18.3%；2021 年为 2.0%。这是市场汇率口径，对汇率敏感，不是 PPP，也不是金融功能度量。
+
+观察只到这一句：
 
 > 香港相对于中国整体经济的 GDP 权重显著下降。
 
@@ -104,7 +106,7 @@ Current conclusion:
 香港是多层身份并存的结构：HKD 锚美元，CNH 源自中国主权信用，USD funding 与中国市场接口同场。相对 GDP 下降是观察。接口价值是否同步下降，未决。香港是否中介层，未决。
 
 Evidence:
-货币局、普通法安排、CNH、Connect、美元银行业务在制度上同时存在。GDP 相对份额下降与公开数量级一致，精确数字待核官方序列。
+货币局、普通法安排、CNH、Connect、美元银行业务在制度上同时存在。World Bank：HK/CN GDP 份额 1997 年 18.3%，2021 年 2.0%。
 
 Counterevidence:
 若 HKD 已与美元锚脱钩运行，或 CNH / Connect 主场已不在香港，本章结构图失效。若接口指标随 GDP 份额同比塌缩，H2 被削弱。
@@ -118,5 +120,5 @@ USD/HKD 是否仍在 CU 区间；CNH 流动性是否仍集中在香港；Connect
 Falsifier:
 friction ↑ 同时 HK flows、CNH liquidity、Connect usage ↓，资金改走其他通道。
 
-Last updated: 2026-09-05
+Last updated: 2026-09-05 (World Bank GDP share verified)
 ```

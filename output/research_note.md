@@ -1,9 +1,11 @@
 # Research note
 
-V1 已按类型重写 `article/00–07`。原稿仍冻结。
+V1 正文已按类型重写。本轮只核数字和案例，不扩体系。
 
-当前判断：功能分层成立为分析框架；香港接口与 GDP 脱钩、香港中介层、摩擦↑→接口价值↑，均为待检验。
+已核：
 
-最重要反证：friction 上升而香港流量、CNH 流动性、Connect 使用下降并改道。
+- GDP 份额：World Bank，1997 年 18.3%，2021 年 2.0%。观察成立；接口价值仍是 H1/H2。
+- SWIFT：美元仍约占支付一半；人民币近年约 2–3%，不用 V0 的 4.33%。
+- 1998：HKMA 官方 double play + 外汇基金入市 + 联系汇率未脱钩。公开主体是金管局，不是已证的人民币出海。
 
-下一步：核官方序列（GDP 份额、SWIFT 口径、1998 操作），填 `data/indicators/core_market_indicators.csv`。
+下一步：把 HIBOR / CNH–CNY / Connect 的可下载序列接到 `data/`，不要再开新概念。

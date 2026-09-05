@@ -42,6 +42,13 @@ Standard Chartered / JPM / Citi / Goldman / HSBC / Gavekal / MUFG / ASR 等。
 
 ---
 
+## Verified this round
+
+- World Bank `NY.GDP.MKTP.CD`：HK/China GDP 份额 1997=18.3%，2021=2.0%。
+- SWIFT RMB Tracker 2025-12：USD ~50.5% / CNY ~2.73%（含欧元区）；剔除欧元区后 USD ~58.6% / CNY ~2.13%。
+- BIS 2025 FX：美元约 89% 的成交一侧。不要和 SWIFT 支付份额混用。
+- HKMA / 财政司司长 1998-08-14：外汇基金入市股票与期货；8-28 结束；联系汇率未脱钩。不是“影子央行”已证。
+
 ## 使用顺序
 
 1. 制度怎么运行：official

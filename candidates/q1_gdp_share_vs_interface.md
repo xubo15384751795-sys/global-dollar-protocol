@@ -1,5 +1,5 @@
 ---
-status: raw
+status: screened
 origin: human
 question: Q1
 created_at: 2026-09-05
@@ -16,7 +16,7 @@ scope_version: "3.0"
 
 ## Evidence
 
-[F][V] 文称 1997 年香港 GDP 约占全国 18.4%，2021 年约 2.1%。  
+[F] World Bank 现价美元：1997 年 18.3%，2021 年 2.0%。  
 同期香港仍运行 HKD 货币局、CNH、Connect、美元清算与国际法律合约。
 
 ## Counterevidence
