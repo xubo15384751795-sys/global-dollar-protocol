@@ -10,6 +10,6 @@ V1 正文已按类型重写。本轮只核数字和案例，不扩体系。
 
 已接：`data/indicators/fx_daily.csv`（Yahoo USD/HKD、USD/CNY，3122 日）。CU 区间内约 96%；近期贴弱方。
 
-未接（官方通道失败，不编造）：HIBOR、Aggregate Balance、CNH–CNY 历史、Connect 流量。
+HKMA 诊断补救已做完一轮后停止：`pagesize=1` 直连/代理/IPv4/urllib 均为 502 或 CONNECT 后超时。故障在 API 边缘后的 ALB，不是本机 requester。日志：`logs/automation/2026-09-05_hkma-api-diagnostic.md`。
 
-下一步仍是这四条官方序列，不是新概念。
+未接、不估算：HIBOR、Aggregate Balance、CNH–CNY 历史、Connect。

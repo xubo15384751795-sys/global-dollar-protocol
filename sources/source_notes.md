@@ -45,7 +45,7 @@ Standard Chartered / JPM / Citi / Goldman / HSBC / Gavekal / MUFG / ASR 等。
 ## Market series this round
 
 - `data/indicators/fx_daily.csv`：Yahoo `HKD=X` / `CNY=X` 日收，2014-09-07–2026-09-05。市场报价，不是 HKMA 定盘。
-- HKMA daily API 本轮 502/超时，HIBOR 与 Aggregate Balance 未下载。
+- HKMA Open API 诊断补救（2026-09-05）：DNS/TLS 通，最小 GET `pagesize=1` 仍 502 `alb`（Aliyun WAF `acw_tc`）。直连与本地代理 127.0.0.1:7897 均为失败。urllib 与 curl 一致。见 `logs/automation/2026-09-05_hkma-api-diagnostic.md`。HIBOR / Aggregate Balance 不估算。
 - Yahoo 无可用 CNH / HIBOR 历史；HKEX Connect 历史页无直接 CSV。不编造。
 
 ## Verified this round

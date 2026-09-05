@@ -7,7 +7,9 @@ Linked Q: Q1 / Q5. First observable on Dollar → HK, not a peg-break story.
 Yahoo Finance daily close `HKD=X` / `CNY=X`, 2014-09-07 至 2026-09-05，n=3122。  
 不是 HKMA 官方定盘。CU 区间 7.75–7.85 自 2005 年起适用。系列写入 `data/indicators/fx_daily.csv`。
 
-HIBOR、Aggregate Balance、CNH–CNY、Connect：本轮 HKMA API 502/超时，Yahoo 无可用 HIBOR/CNH 历史，HKEX Connect 为交互页无直接 CSV。未编造序列。
+HIBOR、Aggregate Balance：2026-09-05 对 HKMA 三 endpoint 做了一次诊断补救（最小 GET、直连/代理、IPv4、urllib），均为 502 或超时。见 `logs/automation/2026-09-05_hkma-api-diagnostic.md`。不估算。
+
+CNH–CNY、Connect：Yahoo 无 CNH 历史；HKEX 无直接 CSV。未编造。
 
 ## Observation
 
